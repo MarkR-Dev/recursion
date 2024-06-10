@@ -41,12 +41,12 @@ function fibsRecArr(n, arr = [0, 1]) {
   return fibsRecArr(n, arr);
 }
 
-function fibsReceArr2(n) {
+function fibsRecArr2(n) {
   if (n <= 0) return [];
   if (n == 1) return [0];
   if (n == 2) return [0, 1];
 
-  const sequence = fibsReceArr2(n - 1);
+  const sequence = fibsRecArr2(n - 1);
 
   return [
     ...sequence,
@@ -68,8 +68,8 @@ console.log("1st rec", fibsRecArr(1)); // [0]
 console.log("2nd rec", fibsRecArr(2)); // [0, 1]
 console.log("8th rec", fibsRecArr(8)); // [0, 1, 1, 2, 3, 5, 8, 13]
 console.log(" ");
-console.log("negative rec2", fibsReceArr2(-1)); // []
-console.log("zero rec2", fibsReceArr2(0)); // []
-console.log("1st rec2", fibsReceArr2(1)); // [0]
-console.log("2nd rec2", fibsReceArr2(2)); // [0, 1]
-console.log("8th rec2", fibsReceArr2(8)); //[0, 1, 1, 2, 3, 5, 8, 13];
+console.log("negative rec2", fibsRecArr2(-1)); // []
+console.log("zero rec2", fibsRecArr2(0)); // []
+console.log("1st rec2", fibsRecArr2(1)); // [0]
+console.log("2nd rec2", fibsRecArr2(2)); // [0, 1]
+console.log("8th rec2", fibsRecArr2(8)); //[0, 1, 1, 2, 3, 5, 8, 13];
