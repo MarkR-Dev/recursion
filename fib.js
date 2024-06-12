@@ -53,18 +53,18 @@ function fibsRecArr2(n) {
   ];
 }
 
-console.log("fibs recursion", fibsRec(8)); // 13
-console.log(" ");
+console.log("fibs recursion", fibsRec(8)); // 21
+
 console.log("zero iter", fibs(0)); // []
 console.log("1st iter", fibs(1)); // [0]
 console.log("2nd iter", fibs(2)); // [0, 1]
 console.log("8th iter", fibs(8)); // [0, 1, 1, 2, 3, 5, 8, 13]
-console.log(" ");
+
 console.log("zero rec", fibsRecArr(0)); // []
 console.log("1st rec", fibsRecArr(1)); // [0]
 console.log("2nd rec", fibsRecArr(2)); // [0, 1]
 console.log("8th rec", fibsRecArr(8)); // [0, 1, 1, 2, 3, 5, 8, 13]
-console.log(" ");
+
 console.log("zero rec2", fibsRecArr2(0)); // []
 console.log("1st rec2", fibsRecArr2(1)); // [0]
 console.log("2nd rec2", fibsRecArr2(2)); // [0, 1]
